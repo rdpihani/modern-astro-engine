@@ -29,7 +29,7 @@ if (!fs.existsSync(ephePath)) {
 }
 
 // रेंडर सर्वर को बताना कि स्विस एफिमेरिस का डेटा कहाँ है
-swisseph.set_ephe_path(ephePath);
+swisseph.swe_set_ephe_path(ephePath);
 
 // बुनियादी रूट (Home Route)
 app.all('/', async (req, res) => {
